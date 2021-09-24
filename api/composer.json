@@ -1,0 +1,16 @@
+{
+    "name" : "s/json",
+    "description": "composer",
+    "require": {
+        "php" : "7.2.24"
+    },
+    "config": {
+        "classmap-authoritative": false,
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "EXTOBACCO\\":"src"
+        }
+    }
+}

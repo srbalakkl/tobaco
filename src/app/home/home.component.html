@@ -1,0 +1,89 @@
+<h2 style="background-color: rgb(96, 84, 179); font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+    TOBACCO BOARD :
+    <mat-icon aria-hidden="false" arian-label="person icon" style="padding-left: 65%;">person
+    </mat-icon>
+    <button mat-button [matMenuTriggerFor]="signout">
+        <span style="color: floralwhite;font-family:monospace; font-size: 150%; "> Jhansi , Creat  </span>
+    </button>
+    <mat-menu #signout="matMenu">
+        <button mat-menu-item>Change Password</button>
+        <button mat-menu-item>profile</button>
+        <button mat-menu-item (click)="logout()">Log Out</button>
+    </mat-menu>
+</h2>
+
+<table>
+    <tr>
+        <td>
+            <button mat-button [matMenuTriggerFor]="menu1"
+                style="font-size: 20px; font-family:'Times New Roman', Times, serif;">Masters <span
+                    style="padding-left: 45px;">&#9830;</span></button>
+            <mat-menu #menu1="matMenu">
+                <button mat-menu-item>Green stock</button>
+                <button mat-menu-item>Package stock</button>
+                <button mat-menu-item>State</button>
+                <button mat-menu-item>District</button>
+                <button mat-menu-item>Countries</button>
+                <button mat-menu-item>Holidays</button>
+                <button mat-menu-item>Registration Year</button>
+
+            </mat-menu>
+
+        </td>
+        <td>
+            <button mat-button [matMenuTriggerFor]="menu2"
+                style="font-size: 20px; font-family:'Times New Roman', Times, serif;">Registration <span
+                    style="padding-left: 45px;">&#9830;</span></button>
+            <mat-menu #menu2="matMenu">
+                <button mat-menu-item>Applications</button>
+                <button mat-menu-item>RCMC</button>
+                <button mat-menu-item>GSP</button>
+            </mat-menu>
+
+        </td>
+        <td>
+            <button mat-button [matMenuTriggerFor]="menu3"
+                style="font-size: 20px; font-family:'Times New Roman', Times, serif;">Registration <span
+                    style="padding-left: 45px;">&#9830;</span></button>
+            <mat-menu #menu3="matMenu">
+                <button mat-menu-item>User</button>
+                <button mat-menu-item>Roles</button>
+                <button mat-menu-item>Trades</button>
+            </mat-menu>
+
+        </td>
+        <td>
+            <button mat-button [matMenuTriggerFor]="menu4"
+                style="font-size: 20px; font-family:'Times New Roman', Times, serif;">Reports <span
+                    style="padding-left: 45px;">&#9830;</span></button>
+            <mat-menu #menu4="matMenu">
+                <button mat-menu-item>RCNC</button>
+                <button mat-menu-item>Roles</button>
+                <button mat-menu-item>Trades</button>
+            </mat-menu>
+
+        </td>
+        <td>
+            <button mat-button [matMenuTriggerFor]="menu5"
+                style="font-size: 20px; font-family:'Times New Roman', Times, serif;">Other <span
+                    style="padding-left: 45px;">&#9830;</span></button>
+            <mat-menu #menu5="matMenu">
+                <button mat-menu-item>RCNC</button>
+                <button mat-menu-item>Register</button>
+                <button mat-menu-item>Trades User</button>
+            </mat-menu>
+
+        </td>
+        <td>
+            <button mat-button [matMenuTriggerFor]="menu6"
+                style="font-size: 20px; font-family:'Times New Roman', Times, serif;">Penalty <span
+                    style="padding-left: 45px;">&#9830;</span></button>
+            <mat-menu #menu6="matMenu">
+                <button mat-menu-item>RCNC</button>
+                <button mat-menu-item>Register</button>
+                <button mat-menu-item>Trades </button>
+            </mat-menu>
+
+        </td>
+    </tr>
+</table>
